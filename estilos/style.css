@@ -1,0 +1,342 @@
+/* Configurações Gerais da Pagina */
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Banner1 */
+#ban1{
+    background-image: url("../imagens/banMartelo.jpg");
+    width: 100%;
+    height: 35rem;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#ban1 > .opa{
+    width: 100%;
+    height: 35rem;
+    background-color: rgba(255, 255, 255, 0.171);
+}
+
+/* Cabeçalho */
+#ban1 > .opa > header{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: transparent;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+#ban1 > .opa > header > h1{
+    padding: 0px 30px;
+    transition: color 0.3s;
+    color: white;
+    font-size: 2.1em;
+}
+
+#ban1 > .opa > header > ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ban1 > .opa > header > ul > li{
+    padding: 5px 15px;
+}
+
+#ban1 > .opa > header > ul > li > a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    width: max-content;
+    padding-bottom: 3px;
+}
+
+#ban1 > .opa > header > ul > li > a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: peru;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+}
+
+#ban1 > .opa > header > ul > li > a:hover::after{
+    width: 100%;
+}
+
+/* Informações Banner */
+#ban1 > .opa > div{
+    width: 25rem;
+    background-color: rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    margin: 0px 13px;
+}
+
+#ban1 > .opa > div > h2{
+    color: white;
+    font-weight: 400;
+}
+
+/* Conteudo Principal */
+main{
+    width: 100%;
+    height: auto;
+}
+
+main > section{
+    padding: 50px 0px;
+}
+
+/* Sessão Experiencia */
+main > #exp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0px;
+}
+
+main > #exp > img{
+    width: 28rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+main > #exp > div{
+    width: 26rem;
+    padding: 15px;
+}
+
+main > #exp > div > h3{
+    font-weight: 300;
+}
+
+main > #exp > div > h2{
+    color: peru;
+    font-size: 2.3em;
+}
+
+main > #exp > div > p{
+    text-align: justify;
+    margin: 10px 0px;
+}
+
+main > #exp > div > button{
+    background-color: maroon;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+
+main > #exp > div > button:hover{
+    background-color: rgba(128, 51, 0, 0.808)
+}
+
+main > #exp > div > button > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+/* Sessão Área de Trabalho */
+main > #pra{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0px;
+}
+
+main > #pra > h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+main > #pra > article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    background-color: brown;
+    padding: 10px 0px;
+    box-shadow: inset 3px 6px 5px rgba(0, 0, 0, 0.308);
+}
+
+main > #pra > article > .itens{
+    height: auto;
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 10px 0px;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+main > #pra > article > .itens > i{
+    font-size: 3rem;
+    color: peru;
+}
+
+main > #pra > article > .itens > h3{
+    text-align: center;
+    font-size: 1.4em;
+    color: rgba(66, 7, 7, 0.973);
+    border-bottom: 1px solid black;
+}
+
+main > #pra > article > .itens >  p{
+    text-align: justify;
+    padding: 15px 5px;
+}
+
+main > #pra > article > .itens > button{
+    background-color: rgba(128, 51, 0, 0.808);
+    border: none;
+    margin-top: 20px;
+    padding: 10px 25px;
+    position: relative;
+    width: max-content;
+}
+
+main > #pra > article > .itens > button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:  rgb(205, 134, 63);
+    width: 0;
+    height: 100%;
+    transition: all 0.3s;
+
+}
+
+main > #pra > article > .itens > button:hover::after{
+    width: 100%;
+    z-index: 0;
+}
+
+main > #pra > article > .itens > button > a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 400;
+    padding: 10px 25px;
+}
+
+/* Sessão Porquê nos Contratar */
+main > #por{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0px;
+}
+
+main > #por > article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main > #por > article > img{
+    width: 35rem;
+    height: 30rem;
+}
+
+main > #por > article > div{
+    width: 25rem;
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.329);
+    border-radius: 15px;
+    margin-left: -6rem;
+}
+
+main > #por > article > div > h4{
+    font-weight: 600;
+}
+
+main > #por > article > div > h2{
+    color: peru;
+    font-size: 2.3em;
+}
+
+main > #por > article > div > ul{
+    list-style-type: none;
+}
+
+main > #por > article > div > ul > li{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+main > #por > article > div > ul > li > h3{
+    padding: 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.4em;
+    background-color: rgb(165, 91, 42);
+}
+
+main > #por > article > div > ul > li > p{
+    text-align: justify;
+}
+
+/* Sessão do  */
+
+/* Rodapé */
+footer{
+    position: relative;
+    text-align: center;
+}
+
+footer > article{
+    width: 100%;
+    height: 30rem;
+    background-image: url("/imagens/advogados.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+footer > a{
+    position: absolute;
+    top: 50%;
+    text-decoration: none;
+}
+
+footer > a > button{
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+}

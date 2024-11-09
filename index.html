@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link do Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/resp.css">
+
+    <!-- Link do JS -->
+    <script src="JS/script.js" defer></script>
+
+    <!-- Link do Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Home</title>
+</head>
+
+<!-- Estilo Principal - Home -->
+<style>
+/* Sessão 1 */
+main > #s1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main > #s1 > div{
+    width: 30rem;
+    padding: 20px 0px;
+}
+
+main > #s1 > div h2{
+    line-height: 50px;
+}
+
+/* Sessão 2 */
+main > #s2{
+    text-align: center;
+}
+
+main > #s2 > article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main > #s2 > article >  div{
+    width: 20rem;
+    padding: 20px 0px;
+    text-align: justify;
+}
+
+
+main > #s2 > div h2{
+    line-height: 50px;
+}
+
+/* Sessão 3 */
+main > #s3{
+    text-align: center;
+}
+
+main > #s3 > article{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 20px 0px;
+}
+
+main > #s3 > article img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+main > #s3 > article > div{
+    width: 20rem;
+    text-align: justify;
+}
+
+main > #s3 > div h3{
+    line-height: 50px;
+}
+
+</style>
+
+<body>
+    <section id="ban1">
+        <div class="opa">
+            <header id="cab">
+                <h1>Advogados</h1>
+
+                <ul>
+                    <li><a href="#exp">Sobre Nós</a></li>
+
+                    <li><a href="#por">Beneficíos</a></li>
+                    
+                    <li><a href="#con">Contato</a></li>
+                </ul>
+            </header>
+
+            <div class="txt">
+                <h2>"Justiça é dar a cada um o que lhe é de direito. E este papel é exercido pelo advogado, na luta pelo interesse de seu cliente."</h2>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <main>
+        <!-- Sessão Experiencia -->
+        <section id="exp">
+            <img src="imagens/advogados.jpg" alt="">
+
+            <div>
+                <h3>Conheça-nos</h3>
+                <h2>São Vários anos de expêriencia</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus placeat voluptas optio obcaecati distinctio et blanditiis facilis qui sapiente iure, corporis dignissimos excepturi, facere harum vitae quia magnam tenetur dolorem?
+                </p>
+
+                <button><a href="#">Ver Mais</a></button>
+            </div>
+        </section>
+
+        <section id="pra">
+            <h2>Área que Trabalhamos</h2>
+
+            <article>
+                <div class="itens">
+                    <i class="bi bi-people-fill"></i>
+                    <h3>Subsubtitulo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat et ut beatae, impedit totam accusamus odio inventore alias corrupti necessitatibus hic libero nulla error commodi. Vel fuga veniam doloremque accusantium.</p>
+
+                    <button><a href="#">Acessar</a></button>
+                </div>
+
+                <div class="itens">
+                    <i class="bi bi-cash-stack"></i>
+                    <h3>Subsubtitulo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat et ut beatae, impedit totam accusamus odio inventore alias corrupti necessitatibus hic libero nulla error commodi. Vel fuga veniam doloremque accusantium.</p>
+
+                    <button><a href="#">Acessar</a></button>
+                </div>
+
+                <div class="itens">
+                    <i class="bi bi-houses-fill"></i>
+                    <h3>Subsubtitulo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat et ut beatae, impedit totam accusamus odio inventore alias corrupti necessitatibus hic libero nulla error commodi. Vel fuga veniam doloremque accusantium.</p>
+
+                    <button><a href="#">Acessar</a></button>
+                </div>
+            </article>
+        </section>
+        
+        <section id="por">
+            <article>
+                <img src="imagens/cumprimento.jpg" alt="">
+
+                <div>
+                    <h4>Nossas Caracteristicas</h4>
+                    <h2>Porquê Contratar nossos Serviços</h2>
+                    
+                    <ul>
+                        <li>
+                            <h3>1.</h3>
+
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque obcaecati laudantium dolore sapiente!</p>
+                        </li>
+
+                        <li>
+                            <h3>2.</h3>
+
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque obcaecati laudantium dolore sapiente!</p>
+                        </li>
+                        
+                        <li>
+                            <h3>3.</h3>
+
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque obcaecati laudantium dolore sapiente!</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        
+        <section id="for">
+
+        </section>
+    </main>
+
+    <footer>
+        <article>
+            
+        </article>
+
+        <a href="#"><button>Contato</button></a>
+    </footer>
+</body>
+</html>
